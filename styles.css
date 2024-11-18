@@ -1,5 +1,6 @@
-body {
-    background-image: url('https://img.picui.cn/free/2024/11/18/673b16dbb4b3b.jpg');
-    background-size: cover;
-    background-position: center;
+@import url('https://static.zeoseven.com/zsft/168/main/result.css');
+
+html {
+   font-family: "WenQuanYi Bitmap Song 14px";
+   font-weight: normal;
 }
