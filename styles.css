@@ -1,6 +1,7 @@
 @import url('https://static.zeoseven.com/zsft/168/main/result.css');
 
 html {
-   font-family: "WenQuanYi Bitmap Song 14px";
-   font-weight: normal;
+    font-family: "WenQuanYi Bitmap Song", serif;
+    font-size: 14px;
+    font-weight: normal;
 }
