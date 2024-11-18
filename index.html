@@ -47,6 +47,25 @@
         您的浏览器不支持音频元素。
     </audio>
 
-    <button onclick="document.getElementById('backgroundMusic').play()">播放背景音乐</button>
+    <!-- 播放按钮 -->
+    <button onclick="playMusic()">播放背景音乐</button>
+    <!-- 停止按钮 -->
+    <button onclick="stopMusic()">停止背景音乐</button>
+
+    <script>
+        // 获取音频元素
+        const music = document.getElementById('backgroundMusic');
+
+        // 播放音频
+        function playMusic() {
+            music.play();
+        }
+
+        // 停止音频
+        function stopMusic() {
+            music.pause();
+            music.currentTime = 0;  // 将音频回到开头
+        }
+    </script>
 </body>
 </html>
