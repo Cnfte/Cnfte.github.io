@@ -5,15 +5,6 @@
   box-sizing: border-box;
 }
 
-/* 设置页面字体 */
-@import url('https://static.zeoseven.com/zsft/245/main/result.css');
-
-html {
-   font-family: "QiushuiShotai Bright";
-   font-weight: normal;
-}
-
-/* 导航栏样式 */
 .navbar {
   background-color: #333;
   overflow: hidden;
