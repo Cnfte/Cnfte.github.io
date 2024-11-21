@@ -6,8 +6,11 @@
 }
 
 /* 设置页面字体 */
-body {
-  font-family: Arial, sans-serif;
+@import url('https://static.zeoseven.com/zsft/245/main/result.css');
+
+html {
+   font-family: "QiushuiShotai Bright";
+   font-weight: normal;
 }
 
 /* 导航栏样式 */
