@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>检测用户UA</title>
+</head>
+<body>
+    <h1>用户 User Agent 检测</h1>
+    <p id="user-agent"></p>
 
+    <script>
+        // 获取用户的User Agent
+        var userAgent = navigator.userAgent;
+        
+        // 在网页中显示User Agent
+        document.getElementById("user-agent").textContent = "您的 User Agent 是: " + userAgent;
+    </script>
+  <p> </p>
+<p> </p>
+<p> </p>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>浏览器内核检测</h1>
+    <p id="browser-engine"></p>
+
+    <script>
+        // 获取用户的 User Agent
+        var userAgent = navigator.userAgent;
+        var engine;
+
+        // 检测浏览器内核
+        if (userAgent.indexOf("Chrome") > -1) {
+            engine = "Blink内核 (Chrome)";
+        } else if (userAgent.indexOf("Firefox") > -1) {
+            engine = "Gecko内核 (Firefox)";
+        } else if (userAgent.indexOf("Safari") > -1) {
+            engine = "WebKit内核 (Safari)";
+        } else if (userAgent.indexOf("Trident") > -1) {
+            engine = "Trident内核 (Internet Explorer)";
+        } else if (userAgent.indexOf("Edge") > -1) {
+            engine = "EdgeHTML内核 (Edge)";
+        } else {
+            engine = "未知内核";
+        }
+
+        // 在网页中显示浏览器内核
+        document.getElementById("browser-engine").textContent = "您的浏览器内核是: " + engine;
+                   </script>
+</body>
+</html>
